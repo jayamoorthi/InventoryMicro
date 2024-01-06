@@ -3,17 +3,18 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.32014.148
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Inventory.Api", "kafka.ProductApi\Inventory.Api.csproj", "{32F1450A-5DDC-4DCE-BF62-0245470EA4E3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Inventory.Api", "kafka.ProductApi\Inventory.Api.csproj", "{32F1450A-5DDC-4DCE-BF62-0245470EA4E3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Inventory.Domain", "ProductApi.Domain\Inventory.Domain.csproj", "{46A5B291-387B-44D5-B5AE-78E8F241139C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Inventory.Domain", "ProductApi.Domain\Inventory.Domain.csproj", "{46A5B291-387B-44D5-B5AE-78E8F241139C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Inventory.Infrastructure", "ProductApi.Infrastructure\Inventory.Infrastructure.csproj", "{D36AB400-B537-469C-AA26-A9ECDC769104}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Inventory.Infrastructure", "ProductApi.Infrastructure\Inventory.Infrastructure.csproj", "{D36AB400-B537-469C-AA26-A9ECDC769104}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OutBox", "OutBox\OutBox.csproj", "{011EDD29-FE71-4DB5-9A30-16007488971F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OutBox", "OutBox\OutBox.csproj", "{011EDD29-FE71-4DB5-9A30-16007488971F}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{16F864AB-C78E-4181-9707-7701ED1DB6FB}"
 	ProjectSection(SolutionItems) = preProject
 		..\..\..\Automatic\AutoCarDriving\KafkaProducer\docker-compose.yml = ..\..\..\Automatic\AutoCarDriving\KafkaProducer\docker-compose.yml
+		..\..\..\..\..\Documents\Inventory -Microservice Architecture using Kafka.docx = ..\..\..\..\..\Documents\Inventory -Microservice Architecture using Kafka.docx
 	EndProjectSection
 EndProject
 Global
