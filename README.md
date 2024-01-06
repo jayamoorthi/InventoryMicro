@@ -2,6 +2,8 @@ Microservice Architecture using Kafka using .net core API
 
 Wiki link : https://github.com/jayamoorthi/InventoryMicro/wiki/Wiki-%E2%80%90-Inventory-Microservice
 
+Source Code : https://github.com/jayamoorthi/InventoryMicro
+
 Inventory Stock management application api for update/ delete stock of product.  To publish event through inventory api call actions, background service to perform backend logic update/delete of products stock from consumer event in the kafka broker message queue. 
 To practical implementation following items need to Installation in your system. 
 •	Visual Studio 2022 
