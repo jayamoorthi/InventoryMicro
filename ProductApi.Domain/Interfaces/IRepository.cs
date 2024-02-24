@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ProductApi.Infrastructure.Interfaces
+namespace ProductApi.Domain.Interfaces
 {
     public interface IRepository<T> where T : BaseEntity
     {

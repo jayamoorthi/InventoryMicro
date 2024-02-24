@@ -1,6 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using ProductApi.Domain.Commons.BaseEntities;
-using ProductApi.Infrastructure.Interfaces;
+using ProductApi.Domain.Interfaces;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -20,12 +20,12 @@ namespace ProductApi.Infrastructure.Repositories
             _entities = context.Set<T>();
         }
 
-        public virtual async Task<IEnumerable<T>> GetAllAsync() => await _entities.AsNoTracking().ToListAsync();
+        public  async Task<IEnumerable<T>> GetAllAsync() => await _entities.AsNoTracking().ToListAsync();
 
-        public virtual async Task<T?> GetByIdAsync(int id) =>
+        public  async Task<T?> GetByIdAsync(int id) =>
             await _entities.AsNoTracking().SingleOrDefaultAsync(s => s.Id == id);
 
-        public virtual async Task<bool> InsertAsync(T entity)
+        public async Task<bool> InsertAsync(T entity)
         {
             if (entity is null)
                 throw new ArgumentNullException(nameof(entity));
@@ -36,7 +36,7 @@ namespace ProductApi.Infrastructure.Repositories
             return true;
         }
 
-        public virtual async Task<bool> UpdateAsync(T entity)
+        public async Task<bool> UpdateAsync(T entity)
         {
             if (entity is null)
                 throw new ArgumentNullException(nameof(entity));

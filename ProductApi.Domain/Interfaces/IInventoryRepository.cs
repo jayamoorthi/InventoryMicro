@@ -5,9 +5,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+
 namespace ProductApi.Domain.Interfaces
 {
-    public interface IInventoryRepository
+    public interface IInventoryRepository : IRepository<InventoryStock>
     {
         Task<InventoryStock> SaveInventoryStockAsync(InventoryStock inventoryStock);
         Task<bool> DeleteStockAsync(InventoryStock inventoryStock);

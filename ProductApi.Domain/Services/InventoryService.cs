@@ -16,14 +16,15 @@ namespace ProductApi.Domain.Services
         {
             _inventoryRepository = inventoryRepository;
         }
-        public Task<bool> DeleteStockAsync(InventoryStock inventoryStock)
+        public async Task<bool> DeleteStockAsync(InventoryStock inventoryStock)
         {
-            throw new NotImplementedException();
+            return await _inventoryRepository.DeleteStockAsync(inventoryStock);        
         }
 
         public async Task<InventoryStock> SaveInventoryStockAsync(InventoryStock inventoryStock)
         {
             return await _inventoryRepository.SaveInventoryStockAsync(inventoryStock);
+           
         }
     }
 }

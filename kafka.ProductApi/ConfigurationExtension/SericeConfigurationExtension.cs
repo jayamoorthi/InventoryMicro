@@ -1,6 +1,4 @@
 ﻿using ProductApi.Domain.Interfaces;
-using ProductApi.Domain.Services;
-using ProductApi.Infrastructure.Interfaces;
 using ProductApi.Infrastructure.Repositories;
 
 namespace kafka.ProductApi.ConfigurationExtension
